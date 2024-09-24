@@ -1,0 +1,214 @@
+/* static/courses/styles.css */
+
+/* Style for the body to make it clean */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Style the header */
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* General container for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Course list page styles */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.course-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-item h3 {
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.course-item a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.course-item a:hover {
+    background-color: #0056b3;
+}
+
+/* Video player section */
+.video-player {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-player video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+
+/* 
+.video-list {
+    margin-top: 20px;
+}
+
+.video-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list li {
+    background-color: #f1f1f1;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-list li:hover {
+    background-color: #e6e6e6;
+}
+
+.video-list strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.video-list a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.video-list a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Video player styling */
+/* .video-player {
+    margin-top: 30px;
+    text-align: center;
+} */
+/* 
+.video-player video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.video-player h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #444; */
+/* } */ */
+
+
+
+/* File: static/courses/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background-color: #f9f9f9;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+li a:visited {
+    color: #5a5a5a;
+}
+
+/* For Mobile Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        padding: 15px;
+    }
+}

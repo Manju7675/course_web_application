@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'courses/styles.css' %}">
+</head>
+<body>
+    <h1>Courses</h1>
+    <div class="container">
+        <div class="course-list">
+            {% for course in courses %}
+            <div class="course-item">
+                <img src="{{ course.image_url }}" alt="Course Thumbnail">
+                <h3>{{ course.course_name }}</h3>
+                <p>{{ course.course_description }}</p>
+                <a href="{% url 'course_detail' course.course_id %}">View Course</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

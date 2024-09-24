@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course {{ course_id }} Details</title>
+    <link rel="stylesheet" href="{% static 'courses/styles.css' %}">
+
+</head>
+<body>
+    <h1>Course ID: {{ course_id }}</h1>  <!-- Render dynamic course_id here -->
+
+    <h2>Videos</h2>
+    <ul>
+        {% for video in videos %}
+            <li>
+                {{ video.video_title }} by {{ video.author_name }} ({{ video.date_of_publish }})
+                <a href="{{ video.youtube_url }}" target="_blank">Watch Video</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
